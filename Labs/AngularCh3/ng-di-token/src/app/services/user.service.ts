@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { Greeter } from '../classes/greeter.class';
+import { Inject, Injectable } from '@angular/core';
+import { GREETER, Greeter } from '../classes/greeter.class';
 
 @Injectable({
   providedIn: 'root'
