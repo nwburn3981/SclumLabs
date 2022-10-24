@@ -18,10 +18,10 @@ export class UserService {
     firstName: 'Peter',
     lastName: 'Parker'
   }]
-  constructor() { }
+  constructor(@Inject(GREETER) public greeter: typeof Greeter) { }
 
   getUser() {
     const user = this.users[Math.floor(Math.random() * this.users.length)]
-    return new Greeter(user);
+    return new this.greeter(user);
   }
 }
