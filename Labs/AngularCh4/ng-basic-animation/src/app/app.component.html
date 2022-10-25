@@ -1,7 +1,8 @@
-
 <style>
   :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
     font-size: 14px;
     color: #333;
     box-sizing: border-box;
@@ -182,7 +183,7 @@
   }
 
   .terminal pre {
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
     color: white;
     padding: 0 1rem 1rem;
     margin: 0;
@@ -226,18 +227,19 @@
     align-items: center;
     font-size: 12px;
     padding: 3px 10px;
-    border: 1px solid rgba(27,31,35,.2);
+    border: 1px solid rgba(27, 31, 35, 0.2);
     border-radius: 3px;
-    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
     margin-left: 4px;
     font-weight: 600;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+      sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   }
 
   .github-star-badge:hover {
-    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-    border-color: rgba(27,31,35,.35);
-    background-position: -.5em;
+    background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
+    border-color: rgba(27, 31, 35, 0.35);
+    background-position: -0.5em;
   }
 
   .github-star-badge .material-icons {
@@ -254,11 +256,9 @@
     width: 1920px;
   }
 
-
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
-
-    .card-container > *:not(.circle-link) ,
+    .card-container > *:not(.circle-link),
     .terminal {
       width: 100%;
     }
@@ -301,18 +301,46 @@
   <div class="type-picker">
     <h5>Pick Social Card Type</h5>
     <div class="type-picker__options">
-      <div class="type-picker__options__option" (click)="setCardType(cardTypes.Facebook)">
-        <button class="btn type-picker__options__option__btn" [ngClass]="selectedCardType === cardTypes.Facebook ? 'btn-primary type-picker__options__option__btn--active' : 'btn-light'">
+      <div
+        class="type-picker__options__option"
+        (click)="setCardType(cardTypes.Facebook)"
+      >
+        <button
+          class="btn type-picker__options__option__btn"
+          [ngClass]="
+            selectedCardType === cardTypes.Facebook
+              ? 'btn-primary type-picker__options__option__btn--active'
+              : 'btn-light'
+          "
+        >
           <div class="icon-facebook"></div>
-          <div class="type-picker__options__option__btn__text">
+          <div
+            class="type-picker__options__option__btn__text"
+            [@
+            fbButtonTextAnimation]="isFBBtnActive ? 'btn-active-text' : 'btn-inactive-text'"
+          >
             Facebook
           </div>
         </button>
       </div>
-      <div class="type-picker__options__option" (click)="setCardType(cardTypes.Twitter)">
-        <button class="btn type-picker__options__option__btn" [ngClass]="selectedCardType === cardTypes.Twitter ? 'btn-primary type-picker__options__option__btn--active' : 'btn-light'">
+      <div
+        class="type-picker__options__option"
+        (click)="setCardType(cardTypes.Twitter)"
+      >
+        <button
+          class="btn type-picker__options__option__btn"
+          [ngClass]="
+            selectedCardType === cardTypes.Twitter
+              ? 'btn-primary type-picker__options__option__btn--active'
+              : 'btn-light'
+          "
+        >
           <div class="icon-twitter"></div>
-          <div class="type-picker__options__option__btn__text">
+          <div
+            class="type-picker__options__option__btn__text"
+            [@
+            twButtonTextAnimation]="isTwBtnActive ? 'btn-active-text' : 'btn-inactive-text'"
+          >
             Twitter
           </div>
         </button>
@@ -321,4 +349,3 @@
   </div>
   <app-social-card [type]="selectedCardType"></app-social-card>
 </div>
-
