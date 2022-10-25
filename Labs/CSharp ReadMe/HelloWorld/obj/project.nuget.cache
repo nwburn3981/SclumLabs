@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "n0V1bJ7dMOCDJkkVp7ofhZ3sfQJlQPC4Wv1sBFUlGDjBJ/wXUeLk8z8PXzoYN6ADqLPmCtMbmVzP3d5yvK1b8A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Labs\\SclumLabs\\Labs\\CSharp ReadMe\\HelloWorld\\HelloWorld.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nickb\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

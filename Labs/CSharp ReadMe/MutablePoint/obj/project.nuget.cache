@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "n9SZiz9x9dDT21fNmDM4cv7FlYxsLCaysSC8c5xgX/uNeBNtXte3t2lg++WFi4v28a3mez2V0oKGTczhRLHvsQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Labs\\SclumLabs\\Labs\\CSharp ReadMe\\MutablePoint\\MutablePoint.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nickb\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
