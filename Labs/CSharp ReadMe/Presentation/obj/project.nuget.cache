@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ichx4J/6b+ZR5fA+d7PnasnrqgERf14REOEbB29pq5ncS5ML6wjsbwkOhaC/GuhlqLnVbSzK8zztE7QkirdIfQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Labs\\SclumLabs\\Labs\\CSharp ReadMe\\Presentation\\Presentation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nickb\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
